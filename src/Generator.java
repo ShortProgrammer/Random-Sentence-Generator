@@ -44,9 +44,20 @@ public class Generator {
 		randomNumber = ran.nextInt(size);
 	}
 	
-	public void sentence() {
-		String word = wordList.get(randomNumber);
-		System.out.println(word);
+	public void sentence(int lengthOfSentence) {
+		for(int i = 0; i < lengthOfSentence; i++) {
+			randomNumber();
+			if(lengthOfSentence != i+1) { //Not the end of the sentence
+				String word = wordList.get(randomNumber);
+				System.out.print(word + " ");
+			}
+			else { //End of sentence
+				String word = wordList.get(randomNumber);
+				System.out.print(word);
+				System.out.print(".");
+				System.out.println();
+			}
+		}
 	}
 
 }
