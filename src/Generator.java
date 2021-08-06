@@ -45,11 +45,20 @@ public class Generator {
 	}
 	
 	public void sentence(int lengthOfSentence) {
+		//Work to do:
+		//Have the first word first letter be uppercase
+		
 		for(int i = 0; i < lengthOfSentence; i++) {
 			randomNumber();
 			if(lengthOfSentence != i+1) { //Not the end of the sentence
 				String word = wordList.get(randomNumber);
-				System.out.print(word + " ");
+				if(i == 0) {
+					word = word.substring(0,1).toUpperCase() + word.substring(1);
+					System.out.print(word + " ");
+				}
+				else {
+					System.out.print(word + " ");
+				}
 			}
 			else { //End of sentence
 				String word = wordList.get(randomNumber);
