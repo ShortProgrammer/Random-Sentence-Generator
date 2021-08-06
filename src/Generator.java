@@ -2,7 +2,15 @@
 public class Generator {
 
 	public Generator() {
-		// TODO Auto-generated constructor stub
+		//Save info from Words
+	}
+	
+	public void randomNumber() {
+		//Gets random number
+	}
+	
+	public void sentence() {
+		//prints random sentences
 	}
 
 }
