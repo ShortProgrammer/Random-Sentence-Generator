@@ -11,7 +11,12 @@ public class Main {
 		//Get sentence(s) from Generator
 		//Display sentence
 		//Ask if user wants to do it again
-
+		
+		Generator generator = new Generator();
+		for(int i = 0; i < 10; i++) {
+			generator.randomNumber();
+			generator.sentence();
+		}
 	}
 
 }
